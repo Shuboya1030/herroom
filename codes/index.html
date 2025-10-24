@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HerRoom AI 创作课程</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo.jpg" alt="HerRoom Logo" class="logo-image">
+                HerRoom AI 创作课程
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#intro" class="nav-link">开场介绍</a></li>
+                <li><a href="#ai-tools" class="nav-link">AI工具推荐</a></li>
+                <li><a href="#text-to-image" class="nav-link">文生图</a></li>
+                <li><a href="#image-examples" class="nav-link">图片示例</a></li>
+                <li><a href="#image-to-image" class="nav-link">图生图</a></li>
+                <li><a href="#optimization" class="nav-link">局部优化</a></li>
+                <li><a href="#workshop" class="nav-link">实操环节</a></li>
+                <li><a href="#bonus" class="nav-link">视频生成</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- 开场 & 工具介绍 -->
+        <section id="intro" class="section hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="gradient-text">AI 图片 & 视频生成</span>
+                        <br>创作课程
+                    </h1>
+                    <p class="hero-subtitle">掌握最前沿的AI创作技术，从文字到图片，从想象到现实</p>
+                    
+                    <div class="course-goals">
+                        <h2><i class="fas fa-target"></i> 课程目标</h2>
+                        <ul>
+                            <li><i class="fas fa-check"></i> 掌握 AI 图片生成技术</li>
+                            <li><i class="fas fa-check"></i> 学会编写高质量 Prompt</li>
+                            <li><i class="fas fa-check"></i> 了解 AI 视频生成趋势</li>
+                        </ul>
+                    </div>
+
+                    <div class="tool-intro">
+                        <h2><i class="fas fa-tools"></i> 推荐工具：即梦AI</h2>
+                        <div class="tool-features">
+                            <div class="feature">
+                                <i class="fas fa-user-friendly"></i>
+                                <h3>易于使用</h3>
+                                <p>界面简洁，操作直观</p>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-star"></i>
+                                <h3>效果出色</h3>
+                                <p>字节跳动出品，质量保证</p>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-images"></i>
+                                <h3>内置图库</h3>
+                                <p>丰富的参考素材和模板</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI绘图工具推荐 -->
+        <section id="ai-tools" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-tools"></i>
+                    AI绘图工具推荐
+                </h2>
+                
+                <div class="tools-table-container">
+                    <table class="tools-table">
+                        <thead>
+                            <tr>
+                                <th><i class="fas fa-tag"></i> 工具名称</th>
+                                <th><i class="fas fa-globe"></i> 官网地址</th>
+                                <th><i class="fas fa-shield-alt"></i> 是否需翻墙</th>
+                                <th><i class="fas fa-star"></i> 主要功能特点</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong class="tool-name">Midjourney</strong></td>
+                                <td><a href="https://www.midjourney.com" target="_blank">midjourney.com</a></td>
+                                <td><span class="vpn-required">是</span></td>
+                                <td>文本生成图像，艺术风格强，支持细节调节，概念设计</td>
+                            </tr>
+                            <tr>
+                                <td><strong class="tool-name">Stable Diffusion</strong></td>
+                                <td><a href="https://stability.ai" target="_blank">stability.ai</a></td>
+                                <td><span class="vpn-required">是</span></td>
+                                <td>开源模型，可本地部署，支持文生图、图像修复、风格迁移，插件扩展（ControlNet）</td>
+                            </tr>
+                            <tr>
+                                <td><strong class="tool-name">DALL·E 3</strong></td>
+                                <td><a href="https://openai.com" target="_blank">openai.com</a></td>
+                                <td><span class="vpn-required">是</span></td>
+                                <td>文本生成图像，支持图像编辑（Inpainting），与 ChatGPT 集成</td>
+                            </tr>
+                            <tr>
+                                <td><strong class="tool-name">豆包</strong></td>
+                                <td><a href="https://www.doubao.com" target="_blank">doubao.com</a></td>
+                                <td><span class="no-vpn">否</span></td>
+                                <td>文本生成图像，支持国风、写实、二次元，多风格快速生成</td>
+                            </tr>
+                            <tr>
+                                <td><strong class="tool-name">即梦</strong></td>
+                                <td><a href="https://jimeng.jianying.com/ai-tool/home" target="_blank">即梦AI</a></td>
+                                <td><span class="no-vpn">否</span></td>
+                                <td>文本生成图像，视频创意，适合短视频场景，风格丰富</td>
+                            </tr>
+                            <tr>
+                                <td><strong class="tool-name">Adobe Firefly</strong></td>
+                                <td><a href="https://firefly.adobe.com" target="_blank">firefly.adobe.com</a></td>
+                                <td><span class="vpn-required">是</span></td>
+                                <td>文生图，矢量图、字体效果，与 Photoshop/Illustrator 深度集成</td>
+                            </tr>
+                            <tr>
+                                <td><strong class="tool-name">Canva AI</strong></td>
+                                <td><a href="https://www.canva.com" target="_blank">canva.com</a></td>
+                                <td><span class="vpn-required">是</span></td>
+                                <td>文生图，简单易用，适合社交媒体设计，模板丰富</td>
+                            </tr>
+                            <tr>
+                                <td><strong class="tool-name">OpenAI ChatGPT</strong></td>
+                                <td><a href="https://chat.openai.com" target="_blank">chat.openai.com</a></td>
+                                <td><span class="vpn-required">是</span></td>
+                                <td>集成 DALL·E 3，直接对话生成和编辑图像，交互式创作</td>
+                            </tr>
+                            <tr>
+                                <td><strong class="tool-name">Google Imagen</strong></td>
+                                <td><a href="https://imagen.research.google" target="_blank">imagen.research.google</a></td>
+                                <td><span class="vpn-required">是</span></td>
+                                <td>高质量文本生成图像，支持逼真写实风格，适合创意和广告场景</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="tools-recommendation">
+                    <h3><i class="fas fa-lightbulb"></i> 推荐建议</h3>
+                    <div class="recommendation-grid">
+                        <div class="recommendation-item">
+                            <h4><i class="fas fa-user-graduate"></i> 初学者推荐</h4>
+                            <p><strong>豆包</strong> 或 <strong>即梦</strong>：无需翻墙，界面友好，快速上手</p>
+                        </div>
+                        <div class="recommendation-item">
+                            <h4><i class="fas fa-palette"></i> 艺术创作</h4>
+                            <p><strong>Midjourney</strong>：艺术风格丰富，创意效果出色</p>
+                        </div>
+                        <div class="recommendation-item">
+                            <h4><i class="fas fa-code"></i> 技术玩家</h4>
+                            <p><strong>Stable Diffusion</strong>：开源免费，可自定义部署</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 文生图基础 -->
+        <section id="text-to-image" class="section">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-pen-to-square"></i>
+                    文生图：从文字到图片
+                </h2>
+                <div class="content-grid">
+                    <div class="content-text">
+                        <h3>基本原理</h3>
+                        <p>AI 根据文字描述理解语义，然后生成对应的图片内容。这个过程包括：</p>
+                        <ol>
+                            <li><strong>文本理解</strong>：AI 解析输入的文字描述</li>
+                            <li><strong>语义映射</strong>：将文字转换为视觉概念</li>
+                            <li><strong>图像生成</strong>：基于学习的数据生成图片</li>
+                        </ol>
+                    </div>
+                </div>
+                
+                <div class="demo-box-large">
+                    <h3><i class="fas fa-play"></i> 现场演示</h3>
+                    <div class="demo-flow-vertical">
+                        <div class="demo-step-large">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>输入 Prompt</h4>
+                                <div class="prompt-example">
+                                    "一个中年女性，短发，穿着白大褂，短发，瘦瘦的，不高，周围被很多事情围起来，包括小孩课本，家务，家庭关系等显示她非常繁忙，插画风格，空白纯色背景，插画，简笔画，灵魂画手"
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arrow-down">↓</div>
+                        <div class="demo-step-large">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>AI 生成结果</h4>
+                                <div class="generated-image-large">
+                                    <img src="texttoimage.png" alt="生成的图片 - 繁忙的中年女性" class="large-demo-image">
+                                    <p class="image-caption">生成的图片</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 图片示例 -->
+        <section id="image-examples" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-images"></i>
+                    图片示例
+                </h2>
+                
+                <div class="examples-grid">
+                    <div class="example-item">
+                        <h3>示例 1：抽象女性主义艺术</h3>
+                        <div class="prompt-display">
+                            <p><strong>Prompt：</strong>抽象女性主义艺术，象征身体、诞生与重生，融合大地与血液的意象，线条如脉搏流动。色调温热而不安，质感如织物、皮肤与土壤。风格：超现实、象征主义、具仪式感与情绪张力</p>
+                            <p><strong>生成工具：</strong>即梦</p>
+                        </div>
+                        <div class="example-image">
+                            <img src="realexample1.png" alt="抽象女性主义艺术作品" onerror="console.log('Image 1 failed to load'); this.style.border='2px solid red';">
+                        </div>
+                    </div>
+
+                    <div class="example-item">
+                        <h3>示例 2：女性主义讽刺艺术</h3>
+                        <div class="prompt-display">
+                            <p><strong>Prompt：</strong>女性主义艺术，以反抗与幽默并存的方式表达女性的力量与日常荒诞。画面融合厨房用具、家务扫把，抹布，内衣、花朵、身体片段等日常符号，被夸张、重组、讽刺化处理。色彩明亮却带讥讽意味，风格波普与超现实主义</p>
+                            <p><strong>生成工具：</strong>即梦</p>
+                        </div>
+                        <div class="example-image">
+                            <img src="realrealexample2.png" alt="女性主义讽刺艺术作品" onerror="console.log('Image 2 failed to load'); this.style.border='2px solid red';">
+                        </div>
+                    </div>
+
+                    <div class="example-item">
+                        <h3>示例 3：女性主义隐喻艺术 （作者：汀帆）</h3>
+                        <div class="prompt-display">
+                            <p><strong>Prompt：</strong>帮我生成有隐喻的系列图像 风格一致 现代风格 有女性主义色彩或者符号意象的 批判古典神话色彩 怪诞 荒诞 抽象 摒弃生活场景 但没有残酷或暴露的东西 色彩灰白黑 视觉冲击 张力 想象力丰富 传递女性主义精神 比例1：1</p>
+                            <p><strong>生成工具：</strong>豆包AI</p>
+                        </div>
+                        <div class="example-image">
+                            <img src="example3_tingfan.jpg" alt="女性主义隐喻艺术作品" onerror="console.log('Image 3 failed to load'); this.style.border='2px solid red';">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 图生图 -->
+        <section id="image-to-image" class="section">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-sync-alt"></i>
+                    图生图：基于已有图片生成新图
+                </h2>
+                
+                <div class="content-grid">
+                    <div class="content-text">
+                        <h3>功能说明</h3>
+                        <p>上传一张参考图片，AI 可以：</p>
+                        <ul>
+                            <li>保留原图的构图和动作</li>
+                            <li>改变风格和色彩</li>
+                            <li>保持人物特征</li>
+                            <li>生成多种变体</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="demo-showcase-large">
+                    <h3><i class="fas fa-magic"></i> 案例展示</h3>
+                    
+                    <!-- 原始图片 -->
+                    <div class="showcase-section">
+                        <h4>原始图片</h4>
+                        <div class="large-image-container original">
+                            <img src="original.jpg" alt="原始图片" class="showcase-image-large">
+                            <p class="image-label">基础照片</p>
+                        </div>
+                    </div>
+                    
+                    <div class="transformation-arrow">↓ AI 风格转换 ↓</div>
+                    
+                    <!-- 变体图片网格 -->
+                    <div class="variants-section">
+                        <h4>生成的艺术变体</h4>
+                        <div class="variants-grid">
+                            <div class="variant-item">
+                                <div class="large-image-container variant1">
+                                    <img src="generated1.png" alt="水彩风格变体" class="showcase-image-large">
+                                    <p class="image-label">艺术变体 1</p>
+                                </div>
+                            </div>
+                            <div class="variant-item">
+                                <div class="large-image-container variant2">
+                                    <img src="generated2.png" alt="油画风格变体" class="showcase-image-large">
+                                    <p class="image-label">艺术变体 2</p>
+                                </div>
+                            </div>
+                            <div class="variant-item">
+                                <div class="large-image-container variant3">
+                                    <img src="generated3.png" alt="卡通风格变体" class="showcase-image-large">
+                                    <p class="image-label">艺术变体 3</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="demo-section">
+                    <h3><i class="fas fa-play"></i> 现场演示</h3>
+                    <p>我们将选择一张图片，现场生成不同风格的变体，展示图生图的强大功能。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 局部优化 -->
+        <section id="optimization" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-edit"></i>
+                    局部优化：使用 <span class="tool-highlight">局部重绘</span> 工具
+                </h2>
+                
+                <div class="optimization-content">
+                    <div class="content-text">
+                        <h3>核心工具：<span class="tool-name">局部重绘</span></h3>
+                        <p>使用 <strong>局部重绘</strong> 功能对已有图片进行精确的局部修改：</p>
+                        <ul>
+                            <li><i class="fas fa-mountain"></i> 更换背景环境</li>
+                            <li><i class="fas fa-palette"></i> 调整颜色搭配</li>
+                            <li><i class="fas fa-hand-paper"></i> 修正手部细节</li>
+                            <li><i class="fas fa-user-edit"></i> 调整面部表情</li>
+                            <li><i class="fas fa-tshirt"></i> 更换服装款式</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="before-after-large">
+                    <h3><i class="fas fa-exchange-alt"></i> 局部重绘优化对比</h3>
+                    
+                    <div class="comparison-layout">
+                        <div class="comparison-item-large">
+                            <h4>优化前</h4>
+                            <div class="optimization-image-container-large before-image">
+                                <img src="texttoimage.png" alt="修改前的图片" class="optimization-image-large">
+                            </div>
+                            <p class="comparison-label">原始图片</p>
+                        </div>
+                        
+                        <div class="vs-large">
+                            <i class="fas fa-arrow-right"></i>
+                            <span>局部重绘</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        
+                        <div class="comparison-item-large">
+                            <h4>优化后</h4>
+                            <div class="optimization-image-container-large after-image">
+                                <img src="redo.png" alt="优化后的图片" class="optimization-image-large">
+                            </div>
+                            <p class="comparison-label">局部重绘后</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="live-demo">
+                    <h3><i class="fas fa-mouse-pointer"></i> 现场操作演示</h3>
+                    <p>我们将演示如何使用 <strong class="tool-highlight">局部重绘</strong> 工具对图片进行小范围的精确替换和优化。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Workshop 实操 -->
+        <section id="workshop" class="section workshop-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-hands-helping"></i>
+                    Workshop：学员实操环节
+                </h2>
+                
+                <div class="workshop-grid">
+                    <div class="workshop-card">
+                        <div class="card-icon">
+                            <i class="fas fa-pencil-alt"></i>
+                        </div>
+                        <h3>练习 1：编写 Prompt</h3>
+                        <p>根据模板，创作自己的完整 Prompt</p>
+                        <ul>
+                            <li>选择一个主题</li>
+                            <li>填写完整模板</li>
+                            <li>生成并观察效果</li>
+                        </ul>
+                    </div>
+
+                    <div class="workshop-card">
+                        <div class="card-icon">
+                            <i class="fas fa-images"></i>
+                        </div>
+                        <h3>练习 2：图生图变换</h3>
+                        <p>上传个人照片，尝试不同风格</p>
+                        <ul>
+                            <li>准备一张清晰照片</li>
+                            <li>尝试 3-5 种不同风格</li>
+                            <li>比较效果差异</li>
+                        </ul>
+                    </div>
+
+                    <div class="workshop-card">
+                        <div class="card-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>练习 3：局部优化</h3>
+                        <p>对生成的图片进行细节调整</p>
+                        <ul>
+                            <li>选择需要优化的区域</li>
+                            <li>编写修改描述</li>
+                            <li>观察优化效果</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="workshop-process">
+                    <h3><i class="fas fa-route"></i> 实操流程</h3>
+                    <div class="process-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <h4>自由创作时间</h4>
+                            <p>10分钟独立练习</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <h4>老师巡回指导</h4>
+                            <p>解答疑问，提供建议</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <h4>成果分享展示</h4>
+                            <p>选择优秀作品讲解</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="workshop-goals">
+                    <h3><i class="fas fa-target"></i> 目标达成</h3>
+                    <p>通过实际操作，让大家真正掌握 AI 图片生成的核心技能，能够独立完成创作任务。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bonus: AI 视频生成 -->
+        <section id="bonus" class="section bonus-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-video"></i>
+                    Bonus：AI 视频生成
+                </h2>
+                
+                <div class="bonus-content">
+                    <div class="future-trend">
+                        <h3><i class="fas fa-rocket"></i> 未来趋势</h3>
+                        <p>AI 技术正在从静态图片向动态视频发展，开启全新的创作可能：</p>
+                        <div class="trend-features">
+                            <div class="feature-item">
+                                <i class="fas fa-film"></i>
+                                <h4>图片转视频</h4>
+                                <p>将静态图片变成动态场景</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-magic"></i>
+                                <h4>文本转视频</h4>
+                                <p>直接从文字描述生成视频</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-cogs"></i>
+                                <h4>智能剪辑</h4>
+                                <p>AI 自动完成视频后期制作</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-demo">
+                        <h3><i class="fas fa-play-circle"></i> 快速演示</h3>
+                        <div class="demo-placeholder">
+                            <i class="fas fa-video"></i>
+                            <h4>AI 视频生成演示</h4>
+                            <p>展示从图片到视频的神奇转换过程</p>
+                        </div>
+                        <p class="demo-note">*此环节仅作展示，不安排学员练习</p>
+                    </div>
+
+                    <div class="inspiration">
+                        <h3><i class="fas fa-brain"></i> 启发思考</h3>
+                        <div class="inspiration-grid">
+                            <div class="inspiration-item">
+                                <h4>创作领域拓展</h4>
+                                <p>从平面设计延伸到动画制作</p>
+                            </div>
+                            <div class="inspiration-item">
+                                <h4>商业应用前景</h4>
+                                <p>广告、教育、娱乐等多个行业</p>
+                            </div>
+                            <div class="inspiration-item">
+                                <h4>技能发展方向</h4>
+                                <p>持续学习新兴 AI 创作技术</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h3><i class="fas fa-magic"></i> AI 创作课程</h3>
+                    <p>掌握未来，从今天开始</p>
+                </div>
+                <div class="footer-right">
+                    <p>&copy; 2025 AI 图片 & 视频生成课程. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

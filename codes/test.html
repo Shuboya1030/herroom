@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>图片测试</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        img { max-width: 500px; margin: 20px; border: 1px solid #ccc; }
+        .test-item { margin: 30px 0; }
+    </style>
+</head>
+<body>
+    <h1>图片显示测试</h1>
+    
+    <div class="test-item">
+        <h2>图片 1: realexample1.png</h2>
+        <img src="realexample1.png" alt="第一张图片" onerror="this.innerHTML='图片加载失败'">
+        <p>文件路径: realexample1.png</p>
+    </div>
+    
+    <div class="test-item">
+        <h2>图片 2: realexample2.png</h2>
+        <img src="realexample2.png" alt="第二张图片" onerror="this.innerHTML='图片加载失败'">
+        <p>文件路径: realexample2.png</p>
+    </div>
+    
+    <div class="test-item">
+        <h2>对比测试 - texttoimage.png</h2>
+        <img src="texttoimage.png" alt="对比图片" onerror="this.innerHTML='图片加载失败'">
+        <p>这个图片应该能正常显示</p>
+    </div>
+</body>
+</html>
