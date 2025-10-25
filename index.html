@@ -12,16 +12,16 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <i class="fas fa-magic"></i>
+                <img src="logo.jpg" alt="HerRoom Logo" class="logo-image">
                 HerRoom AI 创作课程
             </div>
             <ul class="nav-menu">
                 <li><a href="#intro" class="nav-link">开场介绍</a></li>
                 <li><a href="#ai-tools" class="nav-link">AI工具推荐</a></li>
                 <li><a href="#text-to-image" class="nav-link">文生图</a></li>
-                <li><a href="#image-examples" class="nav-link">图片示例</a></li>
-                <li><a href="#image-to-image" class="nav-link">图生图</a></li>
                 <li><a href="#optimization" class="nav-link">局部优化</a></li>
+                <li><a href="#image-to-image" class="nav-link">图生图</a></li>
+                <li><a href="#image-examples" class="nav-link">图片示例</a></li>
                 <li><a href="#workshop" class="nav-link">实操环节</a></li>
                 <li><a href="#bonus" class="nav-link">视频生成</a></li>
             </ul>
@@ -221,36 +221,59 @@
             </div>
         </section>
 
-        <!-- 图片示例 -->
-        <section id="image-examples" class="section bg-light">
+        <!-- 局部优化 -->
+        <section id="optimization" class="section bg-light">
             <div class="container">
                 <h2 class="section-title">
-                    <i class="fas fa-images"></i>
-                    图片示例
+                    <i class="fas fa-edit"></i>
+                    局部优化：使用 <span class="tool-highlight">局部重绘</span> 工具
                 </h2>
                 
-                <div class="examples-grid">
-                    <div class="example-item">
-                        <h3>示例 1：抽象女性主义艺术</h3>
-                        <div class="prompt-display">
-                            <p><strong>Prompt：</strong>抽象女性主义艺术，象征身体、诞生与重生，融合大地与血液的意象，线条如脉搏流动。色调温热而不安，质感如织物、皮肤与土壤。风格：超现实、象征主义、具仪式感与情绪张力</p>
-                            <p><strong>生成工具：</strong>即梦</p>
+                <div class="optimization-content">
+                    <div class="content-text">
+                        <h3>核心工具：<span class="tool-name">局部重绘</span></h3>
+                        <p>使用 <strong>局部重绘</strong> 功能对已有图片进行精确的局部修改：</p>
+                        <ul>
+                            <li><i class="fas fa-mountain"></i> 更换背景环境</li>
+                            <li><i class="fas fa-palette"></i> 调整颜色搭配</li>
+                            <li><i class="fas fa-hand-paper"></i> 修正手部细节</li>
+                            <li><i class="fas fa-user-edit"></i> 调整面部表情</li>
+                            <li><i class="fas fa-tshirt"></i> 更换服装款式</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="before-after-large">
+                    <h3><i class="fas fa-exchange-alt"></i> 局部重绘优化对比</h3>
+                    
+                    <div class="comparison-layout">
+                        <div class="comparison-item-large">
+                            <h4>优化前</h4>
+                            <div class="optimization-image-container-large before-image">
+                                <img src="texttoimage.png" alt="修改前的图片" class="optimization-image-large">
+                            </div>
+                            <p class="comparison-label">原始图片</p>
                         </div>
-                        <div class="example-image">
-                            <img src="realexample1.png" alt="抽象女性主义艺术作品" onerror="console.log('Image 1 failed to load'); this.style.border='2px solid red';">
+                        
+                        <div class="vs-large">
+                            <i class="fas fa-arrow-right"></i>
+                            <span>局部重绘</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        
+                        <div class="comparison-item-large">
+                            <h4>优化后</h4>
+                            <div class="optimization-image-container-large after-image">
+                                <img src="redo.png" alt="优化后的图片" class="optimization-image-large">
+                            </div>
+                            <p class="comparison-label">局部重绘后</p>
                         </div>
                     </div>
+                </div>
 
-                    <div class="example-item">
-                        <h3>示例 2：女性主义讽刺艺术</h3>
-                        <div class="prompt-display">
-                            <p><strong>Prompt：</strong>女性主义艺术，以反抗与幽默并存的方式表达女性的力量与日常荒诞。画面融合厨房用具、家务扫把，抹布，内衣、花朵、身体片段等日常符号，被夸张、重组、讽刺化处理。色彩明亮却带讥讽意味，风格波普与超现实主义</p>
-                            <p><strong>生成工具：</strong>即梦</p>
-                        </div>
-                        <div class="example-image">
-                            <img src="realrealexample2.png" alt="女性主义讽刺艺术作品" onerror="console.log('Image 2 failed to load'); this.style.border='2px solid red';">
-                        </div>
-                    </div>
+                <div class="live-demo">
+                    <h3><i class="fas fa-mouse-pointer"></i> 现场操作演示</h3>
+                    <p>我们将演示如何使用 <strong class="tool-highlight">局部重绘</strong> 工具对图片进行小范围的精确替换和优化。</p>
                 </div>
             </div>
         </section>
@@ -323,59 +346,66 @@
             </div>
         </section>
 
-        <!-- 局部优化 -->
-        <section id="optimization" class="section bg-light">
+        <!-- 图片示例 -->
+        <section id="image-examples" class="section bg-light">
             <div class="container">
                 <h2 class="section-title">
-                    <i class="fas fa-edit"></i>
-                    局部优化：使用 <span class="tool-highlight">局部重绘</span> 工具
+                    <i class="fas fa-images"></i>
+                    图片示例
                 </h2>
                 
-                <div class="optimization-content">
-                    <div class="content-text">
-                        <h3>核心工具：<span class="tool-name">局部重绘</span></h3>
-                        <p>使用 <strong>局部重绘</strong> 功能对已有图片进行精确的局部修改：</p>
-                        <ul>
-                            <li><i class="fas fa-mountain"></i> 更换背景环境</li>
-                            <li><i class="fas fa-palette"></i> 调整颜色搭配</li>
-                            <li><i class="fas fa-hand-paper"></i> 修正手部细节</li>
-                            <li><i class="fas fa-user-edit"></i> 调整面部表情</li>
-                            <li><i class="fas fa-tshirt"></i> 更换服装款式</li>
-                        </ul>
+                <div class="examples-grid">
+                    <div class="example-item">
+                        <h3>示例 1：抽象女性主义艺术</h3>
+                        <div class="prompt-display">
+                            <p><strong>Prompt：</strong>抽象女性主义艺术，象征身体、诞生与重生，融合大地与血液的意象，线条如脉搏流动。色调温热而不安，质感如织物、皮肤与土壤。风格：超现实、象征主义、具仪式感与情绪张力</p>
+                            <p><strong>生成工具：</strong>即梦</p>
+                        </div>
+                        <div class="example-image">
+                            <img src="realexample1.png" alt="抽象女性主义艺术作品" onerror="console.log('Image 1 failed to load'); this.style.border='2px solid red';">
+                        </div>
+                    </div>
+
+                    <div class="example-item">
+                        <h3>示例 2：女性主义讽刺艺术</h3>
+                        <div class="prompt-display">
+                            <p><strong>Prompt：</strong>女性主义艺术，以反抗与幽默并存的方式表达女性的力量与日常荒诞。画面融合厨房用具、家务扫把，抹布，内衣、花朵、身体片段等日常符号，被夸张、重组、讽刺化处理。色彩明亮却带讥讽意味，风格波普与超现实主义</p>
+                            <p><strong>生成工具：</strong>即梦</p>
+                        </div>
+                        <div class="example-image">
+                            <img src="realrealexample2.png" alt="女性主义讽刺艺术作品" onerror="console.log('Image 2 failed to load'); this.style.border='2px solid red';">
+                        </div>
+                    </div>
+
+                    <div class="example-item">
+                        <h3>示例 3：女性主义隐喻艺术 （作者：汀帆）</h3>
+                        <div class="prompt-display">
+                            <p><strong>Prompt：</strong>帮我生成有隐喻的系列图像 风格一致 现代风格 有女性主义色彩或者符号意象的 批判古典神话色彩 怪诞 荒诞 抽象 摒弃生活场景 但没有残酷或暴露的东西 色彩灰白黑 视觉冲击 张力 想象力丰富 传递女性主义精神 比例1：1</p>
+                            <p><strong>生成工具：</strong>豆包AI</p>
+                        </div>
+                        <div class="example-image">
+                            <img src="example3_tingfan.jpg" alt="女性主义隐喻艺术作品" onerror="console.log('Image 3 failed to load'); this.style.border='2px solid red';">
+                        </div>
                     </div>
                 </div>
                 
-                <div class="before-after-large">
-                    <h3><i class="fas fa-exchange-alt"></i> 局部重绘优化对比</h3>
-                    
-                    <div class="comparison-layout">
-                        <div class="comparison-item-large">
-                            <h4>优化前</h4>
-                            <div class="optimization-image-container-large before-image">
-                                <img src="texttoimage.png" alt="修改前的图片" class="optimization-image-large">
-                            </div>
-                            <p class="comparison-label">原始图片</p>
+                <div class="creation-tips">
+                    <h3><i class="fas fa-lightbulb"></i> AI创作实用技巧</h3>
+                    <div class="tips-content">
+                        <div class="tip-item">
+                            <h4><i class="fas fa-shield-alt"></i> 应对关键词限制</h4>
+                            <p>当遇到AI对某些身体部位或敏感词汇的限制时，可以采用以下策略：</p>
+                            <ul>
+                                <li>使用"图生图"功能，上传参考图片进行风格转换</li>
+                                <li>先生成基础构图，再通过手绘或其他工具进行细节完善</li>
+                                <li>运用隐喻和象征性语言替代直接描述</li>
+                            </ul>
                         </div>
-                        
-                        <div class="vs-large">
-                            <i class="fas fa-arrow-right"></i>
-                            <span>局部重绘</span>
-                            <i class="fas fa-arrow-right"></i>
-                        </div>
-                        
-                        <div class="comparison-item-large">
-                            <h4>优化后</h4>
-                            <div class="optimization-image-container-large after-image">
-                                <img src="redo.png" alt="优化后的图片" class="optimization-image-large">
-                            </div>
-                            <p class="comparison-label">局部重绘后</p>
+                        <div class="tip-item">
+                            <h4><i class="fas fa-edit"></i> 优化Prompt策略</h4>
+                            <p>在描述中主动添加约束性语句，如"创作健康向上的艺术作品，避免过度暴露或暴力元素"，这样可以减少AI的自动限制，同时确保生成内容的适宜性。</p>
                         </div>
                     </div>
-                </div>
-
-                <div class="live-demo">
-                    <h3><i class="fas fa-mouse-pointer"></i> 现场操作演示</h3>
-                    <p>我们将演示如何使用 <strong class="tool-highlight">局部重绘</strong> 工具对图片进行小范围的精确替换和优化。</p>
                 </div>
             </div>
         </section>
@@ -435,7 +465,7 @@
                         <div class="step">
                             <div class="step-number">1</div>
                             <h4>自由创作时间</h4>
-                            <p>30分钟独立练习</p>
+                            <p>10分钟独立练习</p>
                         </div>
                         <div class="step">
                             <div class="step-number">2</div>
